@@ -46,6 +46,7 @@ setup(
             'mpc-create-config-pycoeman=pympc.create_pycoeman_config_run_massive_potree_converter:main',
             'mpc-info=pympc.get_info:main',
             'mpc-tiling=pympc.generate_tiles:main',
+            'mpc-pconvertor=pympc.generate_potree:main',
             'mpc-merge=pympc.merge_potree:main',
             'mpc-merge-all=pympc.merge_potree_all:main',
             'mpc-wkt=pympc.get_wkt:main',
