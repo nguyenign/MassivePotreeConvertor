@@ -8,12 +8,12 @@ from pympc import utils
 def run(inputFolder, numberProcs, targetTile, targetSize):
     (_, tcount, tminx, tminy, tminz, tmaxx, tmaxy, tmaxz, _, _, _) = utils.getPCFolderDetails(inputFolder, numberProcs)
     #convert to integers
-    tminx = int(math.ceil(tminx))
-    tminy = int(math.ceil(tminy))
-    tminz = int(math.ceil(tminz))
-    tmaxx = int(math.floor(tmaxx))
-    tmaxy = int(math.floor(tmaxy))
-    tmaxz = int(math.floor(tmaxz))
+    tminx = int(math.ceil(float(tminx)))
+    tminy = int(math.ceil(float(tminy)))
+    tminz = int(math.ceil(float(tminz)))
+    tmaxx = int(math.floor(float(tmaxx)))
+    tmaxy = int(math.floor(float(tmaxy)))
+    tmaxz = int(math.floor(float(tmaxz)))
 
     tRangeX = tmaxx - tminx
     tRangeY = tmaxy - tminy
