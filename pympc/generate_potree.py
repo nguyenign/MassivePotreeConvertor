@@ -88,7 +88,7 @@ def run(inputFolder, outputFolder, format, levels, spacing, extent, numberProcs)
         processes[i].join()
             
 
-if __name__ == "__main__":
+def main():
     args = argument_parser().parse_args()
     print 'Input folder: ', args.input
     print 'Output folder: ', args.output
@@ -106,3 +106,7 @@ if __name__ == "__main__":
     except:
         print 'Execution failed!'
         print traceback.format_exc()
+
+
+if __name__ == "__main__":
+    main()
