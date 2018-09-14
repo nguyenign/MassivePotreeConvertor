@@ -8,6 +8,7 @@ from pympc import utils
 def run(inputFolder, numberProcs, targetTile, targetSize):
     (_, tcount, tminx, tminy, tminz, tmaxx, tmaxy, tmaxz, _, _, _) = utils.getPCFolderDetails(inputFolder, numberProcs)
     #convert to integers
+    print(tminx)
     tminx = int(math.ceil(float(tminx)))
     tminy = int(math.ceil(float(tminy)))
     tminz = int(math.ceil(float(tminz)))
