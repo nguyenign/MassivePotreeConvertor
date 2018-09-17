@@ -59,7 +59,8 @@ RUN ln -s /opt/LAStools/bin/lasmerge /usr/local/sbin/lasmerge
 
 # INSTALL pycoeman
 RUN apt-get update 
-RUN apt-get install -y python-pip3 python-dev build-essential libfreetype6-dev libssl-dev libffi-dev
+RUN apt-get install -y python3-setuptools python-dev build-essential libfreetype6-dev libssl-dev libffi-dev
+RUN easy_install3 pip
 RUN pip3 install git+https://github.com/NLeSC/pycoeman
 
 # INSTALL Massive-PotreeConverter
