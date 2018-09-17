@@ -38,6 +38,7 @@ RUN make
 WORKDIR /opt
 RUN git clone https://github.com/potree/PotreeConverter.git
 WORKDIR /opt/PotreeConverter
+#RUN git checkout tags/1.3_alpha_c++14
 RUN mkdir build
 WORKDIR /opt/PotreeConverter/build
 RUN apt-get install -y libboost-all-dev
