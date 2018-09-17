@@ -58,6 +58,7 @@ RUN ln -s /opt/LAStools/bin/lasmerge /usr/local/sbin/lasmerge
 
 
 # INSTALL pycoeman
+RUN apt-get update 
 RUN apt-get install -y python-pip3 python-dev build-essential libfreetype6-dev libssl-dev libffi-dev
 RUN pip3 install git+https://github.com/NLeSC/pycoeman
 
